@@ -3,7 +3,7 @@ var MANUAL_SLIDESHOW = false;
 // Automatic slideshow interval in milliseconds
 var SLIDESHOW_INTERVAL = 3000;
 // Indicates audio (true) or no audio (false) during slideshow
-var SLIDESHOW_AUDIO = true;
+var SLIDESHOW_AUDIO = false;
 
 // Current slide index
 var slideIndex;
@@ -292,27 +292,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
     slideshow();
   }
 });
-
-// BEGIN FOR PERSONAL USE ONLY
-// disableScreenTimeout attempts to disable screen timeout when slideshow has focus
-async function disableScreenTimeout() {
-  try {
-    await navigator.wakeLock.request("screen");
-    // Screen timeout disabled
-  } catch (err) {
-    // Screen timeout not disabled
-  }
-}
-
-if ("wakeLock" in navigator) {
-  // Disable screen timeout for initial visibility
-  disableScreenTimeout();
-
-  // Add listener to disable screen timeout for subsequent visibilities
-  document.addEventListener("visibilitychange", async () => {
-    if (document.visibilityState === "visible") {
-      disableScreenTimeout();
-    }
-  });
-}
-// END FOR PERSONAL USE ONLY

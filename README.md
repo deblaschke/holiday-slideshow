@@ -1,6 +1,6 @@
 
-ASTRONOMY & SPACE PICTURE SLIDESHOW README
-------------------------------------------
+TEXAS HILL COUNTRY HOLIDAY PICTURE SLIDESHOW README
+---------------------------------------------------
 
 To view the slideshow, go to https://deblaschke.github.io/holiday-slideshow/
 in your favorite browser.  When the slideshow is complete (there are two standard
