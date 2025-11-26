@@ -1,0 +1,62 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-color: #000000;
+  color: #FFFFFF;
+  margin: auto;
+  max-width: max-content;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+#outerTable td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+#slideTitle {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  text-wrap: wrap;
+/*text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.6); Not good with picture background */
+  background-color: rgba(100, 50, 0, 0.75);
+}
+
+#innerTable td {
+  text-align: center;
+  vertical-align: middle;
+/*width: 674px; Now calculated dynamically to simulate responsiveness
+  height: 674px;*/
+  border-style: groove;
+  border-width: 3px;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.4);
+  background-color: #000000;
+}
+
+img.holidayPix {
+  display: block;
+  margin: auto;
+}
+
+button {
+  font-family: Arial;
+  vertical-align: top;
+  width: 2em;
+  height: 2em;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.3);
+}
+
+#slideName {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  text-wrap: wrap;
+/*text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.6); Not good with picture background */
+  background-color: rgba(100, 50, 0, 0.75);
+}
